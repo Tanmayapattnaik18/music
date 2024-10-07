@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Playlist </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div class="container">
+        <h1>Music Playlist Manager</h1>
+        <div class="form-container">
+            <input type="text" id="title" placeholder="Title">
+            <input type="text" id="artist" placeholder="Artist">
+            <input type="number" id="duration" placeholder="Duration (min)">
+            <input type="text" id="genre" placeholder="Genre">
+            <button id="add-song">Add Song</button>
+        </div>
+        
+        <div class="filter-container">
+            <input type="text" id="search" placeholder="Search by Title or Artist">
+            <select id="genre-filter">
+                <option value="">All Genres</option>
+            </select>
+        </div>
+        
+        <div class="sort-container">
+            <button id="sort-title">Sort by Title</button>
+            <button id="sort-artist">Sort by Artist</button>
+            <button id="sort-duration">Sort by Duration</button>
+            <button id="sort-genre">Sort by Genre</button>
+        </div>
+        
+        <div id="playlist-container"></div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
